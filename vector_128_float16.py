@@ -5,7 +5,7 @@ from qdrant_client.models import VectorParams, Distance, PointStruct
 from sentence_transformers import SentenceTransformer
 import json
 
-# Initialize Qdrant client
+# Initialize Qdrant client server
 qdrant_client = QdrantClient("http://localhost:6333")
 
 # Define collection name

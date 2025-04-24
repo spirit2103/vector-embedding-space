@@ -15,7 +15,7 @@ collection_name = "vector_128_float32"
 if not qdrant_client.collection_exists(collection_name):
     qdrant_client.create_collection(
         collection_name=collection_name,
-        vectors_config=VectorParams(size=128, distance=Distance.DOT),
+        vectors_config=VectorParams(size=128, distance=Distance.COSINE),
     )
 print(f"Collection '{collection_name}' is ready.")
 

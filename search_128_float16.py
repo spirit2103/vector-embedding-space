@@ -4,7 +4,7 @@ import streamlit as st
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 
-# Initialize Qdrant client in memory
+# Initialize Qdrant client
 qdrant_client = QdrantClient("http://localhost:6333")
 
 # Collection name
